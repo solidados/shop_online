@@ -1,4 +1,5 @@
 @import url(../styles/header.css);
+@import url(../styles/footer.css);
 * {
   margin: 0;
   padding: 0;
@@ -95,23 +96,35 @@ main {
 }
 
 .promo-text {
+  max-width: 377px;
+}
+
+.promo-text h1 {
+  padding-left: 16px;
+  border-left: 12px solid #f16d7f;
+  letter-spacing: 0.03em;
+}
+
+.promo-text h1 .bold {
   font-weight: 900;
   font-size: 48px;
-  line-height: 58px;
-  text-align: start;
-  border-left: 12px solid #f16d7f;
-  padding: 0 0 0 16px;
-  margin: 0 7% 10% 0;
 }
 
-.promo-black, .promo-red {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.promo-red {
+.promo-text h1 .decore {
   color: #f16d7f;
+}
+
+.promo-text h1 .word__wrap_1 {
+  display: block;
+  width: 280px;
+  word-break: break-all;
+}
+
+.promo-text h1 .word__wrap_2 {
+  display: block;
+  width: 400px;
+  word-break: break-all;
+  font-size: 32px;
 }
 
 .categories {
@@ -361,7 +374,7 @@ main {
 }
 
 .info {
-  background-color: #222222;
+  background-color: rgba(34, 34, 34, 0.9);
 }
 
 .info__wrap {
@@ -377,25 +390,18 @@ main {
   gap: 30px;
 }
 
-.info__item {
+.info__wrap .info__item {
   text-align: center;
   max-width: 360px;
 }
 
-.info__item:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.info__img {
+.info__wrap .info__item .info__img {
   width: 48px;
   height: 40px;
   color: #f16d7f;
 }
 
-.info__title {
+.info__wrap .info__item .info__title {
   color: #fbfbfb;
   font-size: 20px;
   line-height: 24px;
@@ -403,7 +409,7 @@ main {
   margin: 20px 0 16px;
 }
 
-.info__text {
+.info__wrap .info__item .info__text {
   color: #fbfbfb;
   font-size: 14px;
   line-height: 17px;
@@ -412,24 +418,11 @@ main {
   text-align: center;
 }
 
-.footer {
-  background-color: #222;
-  padding: 20px 0;
-}
-
-.footer-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #fff;
-}
-
-.social {
-  margin-left: 10px;
-  text-decoration: none;
+.info__wrap .info__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 1190px) {

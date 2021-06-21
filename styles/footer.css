@@ -1,0 +1,184 @@
+.footer {
+  background-color: rgba(34, 34, 34, 0.9);
+}
+
+.footer .subscribe {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(244, 244, 244, 0.5)), to(rgba(245, 245, 245, 0.7))), url("../images_all/backgrounds/bkgr_footer.png");
+  background-image: linear-gradient(to right, rgba(244, 244, 244, 0.5), rgba(245, 245, 245, 0.7)), url("../images_all/backgrounds/bkgr_footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 448px;
+}
+
+.footer .subscribe__wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .subscribe__left, .footer .subscribe__right {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 156px 0;
+}
+
+.footer .subscribe__right {
+  max-width: 590px;
+  margin: 0 100px;
+}
+
+.footer .subscribe__photo {
+  margin: 0 0 30px 0;
+}
+
+.footer .subscribe__comment {
+  max-width: 358px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.footer .subscribe__title {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.footer .subscribe__text {
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 0 32px 0;
+}
+
+.footer .subscribe__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .subscribe__input {
+  background: #e1e1e1;
+  min-width: 200px;
+  padding: 14px 20px;
+  border: 1px solid transparent;
+  border-top-left-radius: 23px;
+  border-bottom-left-radius: 23px;
+}
+
+.footer .subscribe__input::-webkit-input-placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer .subscribe__input:-ms-input-placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer .subscribe__input::-ms-input-placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer .subscribe__input::placeholder {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer .subscribe__input:hover {
+  background: #dbdbdb;
+}
+
+.footer .subscribe__button {
+  border: 1px solid transparent;
+  background-color: #f16d7f;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  padding: 14px 20px;
+  border-top-right-radius: 23px;
+  border-bottom-right-radius: 23px;
+}
+
+.footer .subscribe__button:hover {
+  background: #e05c6e;
+}
+
+.footer .footer-wrap {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #fff;
+}
+
+.footer .footer-wrap .footer-left {
+  font-size: 16px;
+  line-height: 19px;
+  color: whitesmoke;
+}
+
+.footer .footer-wrap .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .footer-wrap .footer-right .footer-social {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.footer .footer-wrap .footer-right .footer-social {
+  background-color: white;
+  color: black;
+  height: 32px;
+  width: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-wrap .footer-right .footer-social:nth-child(2) {
+  background: #F16D7F;
+}
+/*# sourceMappingURL=footer.css.map */
