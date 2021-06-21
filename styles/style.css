@@ -241,7 +241,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 48.5px;
 }
 
 .products-cards .product-card {
@@ -304,6 +304,7 @@ main {
   font-size: 14px;
   line-height: 17px;
   color: whitesmoke;
+  text-align: center;
 }
 
 .products-cards .product-btn:hover {
@@ -311,18 +312,104 @@ main {
           box-shadow: 0 0 2px 2px #ffffff;
 }
 
-.product-desc {
-  padding: 10px;
+.products .product-content {
+  padding: 25px 16px 20px;
+  text-align: left;
 }
 
-.product-title {
-  font-weight: bold;
-  margin-top: 0;
+.products .product-content .product-title {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 16px;
+  color: black;
+  margin-bottom: 12px;
 }
 
-.product-price {
-  color: pink;
-  margin-bottom: 0;
+.products .product-content .product-description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #5d5d5d;
+  margin: 0 0 18px 0;
+}
+
+.products .product-content .product-price {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #f16d7f;
+}
+
+.products .button-allProduct {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  min-width: 200px;
+  max-width: 212px;
+  padding: 15px 32px;
+  margin: 0 auto;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+
+.products .button-allProduct:hover {
+  color: whitesmoke;
+  border: 1px solid #f16d7f;
+  background-color: #f16d7f;
+}
+
+.info {
+  background-color: #222222;
+}
+
+.info__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 103px 0;
+  gap: 30px;
+}
+
+.info__item {
+  text-align: center;
+  max-width: 360px;
+}
+
+.info__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.info__img {
+  width: 48px;
+  height: 40px;
+  color: #f16d7f;
+}
+
+.info__title {
+  color: #fbfbfb;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 20px 0 16px;
+}
+
+.info__text {
+  color: #fbfbfb;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  max-width: 320px;
+  text-align: center;
 }
 
 .footer {
@@ -355,7 +442,7 @@ main {
   .category:last-child {
     width: 100%;
   }
-  product-card {
+  .product-card {
     margin-right: 30px;
   }
   product-card::nth-child(2) .product-cards {
