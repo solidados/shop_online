@@ -580,7 +580,7 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 48.5px;
+  margin-bottom: 50px;
 }
 
 .products-cards .product-card {
