@@ -224,7 +224,7 @@ main {
   margin: 0 0 45px 0;
 }
 
-.breadcrumbs__wrap {
+.breadcrumbs .breadcrumbs__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,14 +239,14 @@ main {
       flex-wrap: wrap;
 }
 
-.breadcrumbs__current {
+.breadcrumbs .breadcrumbs__wrap .breadcrumbs__current {
   padding: 60px 0;
   font-size: 24px;
   line-height: 29px;
   color: #f16d7f;
 }
 
-.breadcrumbs__list {
+.breadcrumbs .breadcrumbs__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,24 +255,24 @@ main {
   font-weight: 400;
 }
 
-.breadcrumbs__link > a {
+.breadcrumbs .breadcrumbs__list .breadcrumbs__link > a {
   color: #636363;
 }
 
-.breadcrumbs__link > a:hover {
+.breadcrumbs .breadcrumbs__list .breadcrumbs__link > a:hover {
   color: #f16d7f;
 }
 
-.breadcrumbs__link_red {
+.breadcrumbs .breadcrumbs__list .breadcrumbs__link_red {
   color: #f16d7f;
   font-weight: 700;
 }
 
-.breadcrumbs__link + .breadcrumbs__link {
+.breadcrumbs .breadcrumbs__list .breadcrumbs__link + .breadcrumbs__link {
   padding-left: 8px;
 }
 
-.breadcrumbs__link + .breadcrumbs__link::before {
+.breadcrumbs .breadcrumbs__list .breadcrumbs__link + .breadcrumbs__link::before {
   display: inline-block;
   padding-right: 8px;
   color: #636363;
@@ -283,7 +283,7 @@ main {
   margin: 0 0 45px 0;
 }
 
-.filters__wrap {
+.filters .filters__wrap {
   padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +296,7 @@ main {
   gap: 30px;
 }
 
-.filters__filter {
+.filters .filters__wrap .filters__filter {
   position: relative;
   width: 360px;
   color: #6f6e6e;
@@ -305,30 +305,30 @@ main {
   margin-right: 15px;
 }
 
-.filters__filter > summary {
+.filters .filters__wrap .filters__filter > summary {
   display: block;
   padding: 15px;
 }
 
-.filters__filter[open] {
+.filters .filters__wrap .filters__filter[open] {
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
-.filters__filter[open] > summary {
+.filters .filters__wrap .filters__filter[open] > summary {
   color: #f16d7f;
 }
 
-.filters__filter[open] > summary path {
+.filters .filters__wrap .filters__filter[open] > summary path {
   fill: #f16d7f;
 }
 
-.filters__img {
+.filters .filters__wrap .filters__img {
   width: 15px;
   height: 10px;
 }
 
-.filters__choice {
+.filters .filters__choice {
   position: absolute;
   width: 360px;
   -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
@@ -337,40 +337,40 @@ main {
   z-index: 1;
 }
 
-.filters__sub-filter {
+.filters .filters__choice .filters__sub-filter {
   padding: 11px;
 }
 
-.filters__sub-filter > summary {
+.filters .filters__choice .filters__sub-filter > summary {
   display: block;
   border-left: 5px solid #f16d7f;
   border-bottom: 1px solid #ebebeb;
   padding: 11px;
 }
 
-.filters__sub-filter[open] > summary {
+.filters .filters__choice .filters__sub-filter[open] > summary {
   color: #f16d7f;
 }
 
-.filters__list {
+.filters .filters__choice .filters__list {
   background: #ffffff;
   padding: 14px 0 0 16px;
 }
 
-.filters__elem {
+.filters .filters__choice .filters__element {
   margin: 10px 0;
 }
 
-.filters__link {
+.filters .filters__choice .filters__link {
   color: #6f6e6e;
 }
 
-.filters__select {
+.filters .filters__choice .filters__select {
   outline: none;
   padding: 0;
 }
 
-.filters__select[open] .filters__value[selected] {
+.filters .filters__choice .filters__select[open] .filters__value[selected] {
   background-color: #f8f3f4;
 }
 
@@ -384,7 +384,7 @@ main {
   margin-bottom: 96.5px;
 }
 
-.pagination__list {
+.pagination .pagination__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,37 +395,37 @@ main {
   border: 1px solid #ebebeb;
 }
 
-.pagination__page {
+.pagination .pagination__list .pagination__page {
   font-size: 16px;
   line-height: 19px;
 }
 
-.pagination__page:not(:last-child) {
+.pagination .pagination__page:not(:last-child) {
   margin-right: 15px;
 }
 
-.pagination__link {
+.pagination .pagination__page:not(:last-child) .pagination__link {
   color: #ebebeb;
 }
 
-.pagination__link:hover {
+.pagination .pagination__page:not(:last-child) .pagination__link:hover {
   color: #f16d7f;
 }
 
-.pagination__link:focus {
+.pagination .pagination__page:not(:last-child) .pagination__link:focus {
   color: #f16d7f;
 }
 
-.pagination__link:active {
+.pagination .pagination__page:not(:last-child) .pagination__link:active {
   color: #f16d7f;
 }
 
-.pagination__link > i {
+.pagination .pagination__link > i {
   color: #222222;
   font-size: 20px;
 }
 
-.pagination__link > i:hover {
+.pagination .pagination__link > i:hover {
   color: #f16d7f;
 }
 
