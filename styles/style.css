@@ -564,7 +564,20 @@ main {
   color: #f16d7f;
 }
 
-.products .button-allProduct {
+.products .all__products-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 95.5px;
+}
+
+.products .all__products-btn .button-allProduct {
   display: block;
   text-align: center;
   font-size: 16px;
@@ -578,7 +591,7 @@ main {
   border: 1px solid #f16d7f;
 }
 
-.products .button-allProduct:hover {
+.products .all__products-btn .button-allProduct:hover {
   color: whitesmoke;
   border: 1px solid #f16d7f;
   background-color: #f16d7f;

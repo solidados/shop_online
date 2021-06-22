@@ -442,23 +442,29 @@
                 color: #f16d7f;
             }
         }
-        .button-allProduct {
-            display: block;
-            text-align: center;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            min-width: 200px;
-            max-width: 212px;
-            padding: 15px 32px;
-            margin: 0 auto;
-            color: #f16d7f;
-            border: 1px solid #f16d7f;
-        }
-        .button-allProduct:hover {
-            color: whitesmoke;
-            border: 1px solid #f16d7f;
-            background-color: #f16d7f;
+        .all__products-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 95.5px;
+            .button-allProduct {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                min-width: 200px;
+                max-width: 212px;
+                padding: 15px 32px;
+                margin: 0 auto;
+                color: #f16d7f;
+                border: 1px solid #f16d7f;
+            }
+            .button-allProduct:hover {
+                color: whitesmoke;
+                border: 1px solid #f16d7f;
+                background-color: #f16d7f;
+            }
         }
     }
     
