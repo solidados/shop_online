@@ -1,7 +1,9 @@
-    // === HEADER SECTION ========
+    // == HEADER SECTION ==================
     @import url(../styles/header.css);
     // == FOOTER FOR ALL PAGES ============
     @import url(../styles/footer.css);
+    // == VARIABLES =======================
+    $shift: 50px;
     // ====================================
     * {
         margin: 0;
@@ -60,18 +62,15 @@
         margin: 0 auto;
         box-sizing: border-box;
         max-width: 100%;
-    
-    main {
-        overflow: hidden;
-        min-height: 100%;
+        main {
+            overflow: hidden;
+            min-height: 100%;
+        }
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
     }
-    
-    .container {
-        max-width: 1140px;
-        margin: 0 auto;
-    }
-    }
-    
     
     // ============================================
     // === INDEX - PROMO SECTION ==================
@@ -472,6 +471,7 @@
             }
         }
     }
+    
     // ============================================
     // === WOMEN'S COLLECTION SLIDER ==============
     .slider {
@@ -481,43 +481,43 @@
         align-items: center;
         position: relative;
         padding-bottom: $shift;
-        
-            &-img {
-                border: none;
-                background: #F7F7F7;
-            }
-        
-            &-btn {
+        &-img {
+            border: none;
+            background: #F7F7F7;
+        }
+        &-btn {
             background-color: transparent;
-            color: black;
+            color: darkgrey;
             padding: 10px;
             border: none;
             position: absolute;
-                &:hover {
-                    color: pink;
-                    border-color: pink;
-                    background-color: lightgray;
-                }
-                &:active {
-                    background-color: #000;
-                }
-                
-                &-left {
-                    left: 5px;
-                }
-                
-                &-right {
-                    right: 5px;
-                }
+            font-size: 35px;
+            &:hover {
+                color: white;
+                background-color: rgba(206, 204, 204, 0.8);
+            }
+            &:active {
+                transform: scale(1.1);
+                transition: 0.3s;
+                background-color: rgba(112, 111, 111, 0.8);
+            }
+            &-left {
+                left: 5px;
+            }
+            &-right {
+                right: 5px;
+            }
         }
     }
     
     .about-wrap {
-        background-color: gold;
+        // background-color: whitesmoke;
+        background-color: pink;
         margin-top: - $shift;
-        position: relative; /* чтобы блок был над, а не под */
+        position: relative;
+        /* чтобы блок был над, а не под */
     }
-
+    
     // ============================================
     // == UPPER FOOTER ============================
     .info {

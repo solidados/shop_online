@@ -605,12 +605,6 @@ body .container {
   background-color: #f16d7f;
 }
 
-.wrap {
-  width: 600px;
-  margin: 0 auto;
-  border: 1px solid red;
-}
-
 .slider {
   background: #F7F7F7;
   display: -webkit-box;
@@ -628,25 +622,29 @@ body .container {
 
 .slider-img {
   border: none;
-  /*вся картинка видна*/
+  background: #F7F7F7;
 }
 
 .slider-btn {
-  background-color: grey;
-  color: #fff;
+  background-color: transparent;
+  color: darkgrey;
   padding: 10px;
-  border: 1px solid #000;
+  border: none;
   position: absolute;
+  font-size: 35px;
 }
 
 .slider-btn:hover {
-  color: pink;
-  border-color: pink;
-  background-color: lightgray;
+  color: white;
+  background-color: rgba(206, 204, 204, 0.8);
 }
 
 .slider-btn:active {
-  background-color: #000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: rgba(112, 111, 111, 0.8);
 }
 
 .slider-btn-left {
@@ -658,7 +656,7 @@ body .container {
 }
 
 .about-wrap {
-  background-color: gold;
+  background-color: pink;
   margin-top: -50px;
   position: relative;
   /* чтобы блок был над, а не под */
