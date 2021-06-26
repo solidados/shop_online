@@ -1,5 +1,5 @@
     .header {
-        background-color: rgba(34, 34, 34, 0.9);
+        background-color: $bgrnd-dark-color;
         padding: 17px 0 18px;
         &-wrap {
             display: flex;
@@ -13,13 +13,13 @@
                     margin-right: 30px;
                 }
                 .header-item:hover a {
-                    fill: #f16d7f;
+                    fill: $main-color;
                 }
                 .header-item:active a {
-                    fill: #f16d7f;
+                    fill: $main-color;
                 }
                 .header-item:focus a {
-                    fill: #f16d7f;
+                    fill: $main-color;
                 }
             }
         }
@@ -51,7 +51,7 @@
         color: #ffffff;
         font-size: 13px;
         border: 1px solid transparent;
-        background-color: #f16d7f;
+        background-color: $main-color;
     }
     
     .cart:hover .cart-circle {

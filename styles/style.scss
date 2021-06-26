@@ -1,9 +1,8 @@
-    // == HEADER SECTION ==================
-    @import url(../styles/header.css);
-    // == FOOTER FOR ALL PAGES ============
-    @import url(../styles/footer.css);
-    // == VARIABLES =======================
-    $shift: 50px;
+    // == IMPORTS ========================
+    @import './scss/header';
+    @import './scss/footer';
+    @import './scss/variables';
+    @import './pages/product';
     // ====================================
     * {
         margin: 0;
@@ -19,8 +18,8 @@
     }
     
     a:hover {
-        transform: scale(1.1);
-        transition: 0.3s;
+        transform: $main-transform;
+        transition: $main-transition;
     }
     
     ol,
@@ -51,7 +50,7 @@
     }
     
     summary:hover {
-        transition: 0.3s;
+        transition: $main-transition;
         cursor: pointer;
     }
     
@@ -86,20 +85,21 @@
             min-height: 300px;
             height: 100%;
             background: url(../images_all/backgrounds/img_main_001.png) no-repeat -220px;
+            background-size: contain;
         }
         &-text {
             max-width: 377px;
         }
         &-text h1 {
             padding-left: 16px;
-            border-left: 12px solid rgba(241, 109, 127, 1);
+            border-left: 12px solid $main-color;
             letter-spacing: 0.03em;
             .bold {
                 font-weight: 900;
                 font-size: 48px;
             }
             .decore {
-                color: rgba(241, 109, 127, 1);
+                color: $main-color;
             }
             .word__wrap_1 {
                 display: block;
@@ -121,58 +121,56 @@
         margin-bottom: 90px;
         &-wrap {
             display: flex;
-            justify-content: space-around;
             flex-wrap: wrap;
-            gap: 30px;
+            justify-content: space-between;
         }
         .category {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 60px;
             &:not(:last-child) {
                 width: 360px;
                 height: 260px;
+                margin-bottom: 30px;
             }
             &:last-child {
                 width: 100%;
                 height: 180px;
             }
             &-women {
-                background: url(../images_all/outlook/card_main_001.png);
+                background-image: linear-gradient(to top, $gradient-1, $gradient-2), url(../images_all/outlook/card_main_001.png);
+                background-position: center;
                 background-size: cover;
-            }
-            &-women:hover {
-                filter: brightness(50%);
             }
             &-men {
-                background: url(../images_all/outlook/card_main_002.png);
+                background-image: linear-gradient(to top, $gradient-1, $gradient-2), url(../images_all/outlook/card_main_002.png);
+                background-position: center;
                 background-size: cover;
-            }
-            &-men:hover {
-                filter: brightness(50%);
             }
             &-children {
-                background: url(../images_all/outlook/card_main_003.png);
+                background-image: linear-gradient(to top, $gradient-1, $gradient-2), url(../images_all/outlook/card_main_003.png);
+                background-position: center;
                 background-size: cover;
-            }
-            &-children:hover {
-                filter: brightness(50%);
             }
             &-accesories {
-                background: url(../images_all/backgrounds/img_main_002.png);
+                background-image: linear-gradient(to top, $gradient-1, $gradient-2), url(../images_all/backgrounds/img_main_002.png);
+                background-position: center;
                 background-size: cover;
             }
-            &-accesories:hover {
-                filter: brightness(50%);
-            }
             &-text {
-                color: #ffffff;
+                color: rgb(219, 217, 217);
                 font-size: 16px;
-                font-weight: 400;
+                font-weight: 300;
                 text-align: center;
             }
+            &-text:hover {
+                color: #ffffff;
+                filter: brightness(120%);
+                font-weight: 400;
+            }
             &-decor {
-                color: #f16d7f;
+                color: $main-color;
                 font-size: 24px;
                 font-weight: 700;
             }
@@ -196,7 +194,7 @@
                 padding: 60px 0;
                 font-size: 24px;
                 line-height: 29px;
-                color: #f16d7f;
+                color: $main-color;
             }
         }
         .breadcrumbs__list {
@@ -208,10 +206,10 @@
                 color: #636363;
             }
             .breadcrumbs__link>a:hover {
-                color: #f16d7f;
+                color: $main-color;
             }
             .breadcrumbs__link_red {
-                color: #f16d7f;
+                color: $main-color;
                 font-weight: 700;
             }
             .breadcrumbs__link+.breadcrumbs__link {
@@ -252,13 +250,13 @@
                 padding: 15px;
             }
             .filters__filter[open] {
-                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.25);
             }
             .filters__filter[open]>summary {
-                color: #f16d7f;
+                color: $main-color;
             }
             .filters__filter[open]>summary path {
-                fill: #f16d7f;
+                fill: $main-color;
             }
             .filters__img {
                 width: 15px;
@@ -268,7 +266,7 @@
         .filters__choice {
             position: absolute;
             width: 360px;
-            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.25);
             background-color: #ffffff;
             z-index: 1;
             .filters__sub-filter {
@@ -276,12 +274,12 @@
             }
             .filters__sub-filter>summary {
                 display: block;
-                border-left: 5px solid #f16d7f;
+                border-left: 5px solid $main-color;
                 border-bottom: 1px solid #ebebeb;
                 padding: 11px;
             }
             .filters__sub-filter[open]>summary {
-                color: #f16d7f;
+                color: $main-color;
             }
             .filters__list {
                 background: #ffffff;
@@ -325,13 +323,13 @@
                 color: #ebebeb;
             }
             .pagination__link:hover {
-                color: #f16d7f;
+                color: $main-color;
             }
             .pagination__link:focus {
-                color: #f16d7f;
+                color: $main-color;
             }
             .pagination__link:active {
-                color: #f16d7f;
+                color: $main-color;
             }
         }
         .pagination__link>i {
@@ -339,7 +337,7 @@
             font-size: 20px;
         }
         .pagination__link>i:hover {
-            color: #f16d7f;
+            color: $main-color;
         }
     }
     
@@ -354,6 +352,7 @@
         &-title {
             text-align: center;
             font-size: 30px;
+            font-weight: 400;
             line-height: 36px;
             margin-bottom: 10px;
         }
@@ -361,19 +360,18 @@
             margin-bottom: 45px;
             text-align: center;
             font-size: 14px;
+            font-weight: 300;
             line-height: 17px;
             color: #9f9f9f;
         }
         &-cards {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
-            gap: 30px;
             margin-bottom: 50px;
             .product-card {
                 width: 360px;
                 background-color: #fbfbfb;
-                border: 1px solid transparent;
                 position: relative;
                 margin-bottom: 30px;
                 .product-img {
@@ -426,48 +424,49 @@
             padding: 25px 16px 20px;
             text-align: left;
             .product-title {
-                font-size: 13px;
+                font-size: 14px;
                 font-weight: 700;
                 line-height: 16px;
+                letter-spacing: 0.05em;
                 color: black;
                 margin-bottom: 12px;
             }
             .product-description {
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 17px;
                 color: #5d5d5d;
-                margin: 0 0 18px 0;
+                margin-bottom: 18px;
             }
             .product-price {
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 19px;
-                color: #f16d7f;
+                color: $main-color;
             }
         }
         .all__products-btn {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 95.5px;
+            margin-bottom: 95px;
             .button-allProduct {
-                display: block;
+                display: inline-block;
                 text-align: center;
                 font-size: 16px;
                 font-weight: 400;
                 line-height: 19px;
-                min-width: 200px;
-                max-width: 212px;
+                // min-width: 200px;
+                // max-width: 212px;
                 padding: 15px 32px;
                 margin: 0 auto;
-                color: #f16d7f;
-                border: 1px solid #f16d7f;
+                color: $main-color;
+                border: 1px solid $main-color;
             }
             .button-allProduct:hover {
                 color: whitesmoke;
-                border: 1px solid #f16d7f;
-                background-color: #f16d7f;
+                border: 1px solid $main-color;
+                background-color: $main-color;
             }
         }
     }
@@ -521,20 +520,19 @@
     // ============================================
     // == UPPER FOOTER ============================
     .info {
-        background-color: rgba(34, 34, 34, 0.9);
+        background-color: $bgrnd-dark-color;
         &__wrap {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
             padding: 103px 0;
-            gap: 30px;
             .info__item {
                 text-align: center;
                 max-width: 360px;
                 .info__img {
                     width: 48px;
                     height: 40px;
-                    color: #f16d7f;
+                    color: $main-color;
                 }
                 .info__title {
                     color: #fbfbfb;
