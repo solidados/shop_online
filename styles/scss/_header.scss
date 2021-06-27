@@ -1,45 +1,47 @@
-    .header {
-        background-color: $bgrnd-dark-color;
-        padding: 17px 0 18px;
-        &-wrap {
+.header {
+    background-color: white;
+    padding: 17px 0 18px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .col-left .col-right {
             display: flex;
             justify-content: space-between;
-            .col-left .col-right {
-                display: flex;
-                align-items: center;
+            align-items: center;
+        }
+        .col-right {
+            .header-item:not(:last-child) {
+                margin-right: 30px;
             }
-            .col-right {
-                .header-item:not(:last-child) {
-                    margin-right: 30px;
-                }
-                .header-item:hover a {
-                    fill: $main-color;
-                }
-                .header-item:active a {
-                    fill: $main-color;
-                }
-                .header-item:focus a {
-                    fill: $main-color;
-                }
+            .header-item:hover a {
+                fill: $main-color;
+            }
+            .header-item:active a {
+                fill: $main-color;
+            }
+            .header-item:focus a {
+                fill: $main-color;
             }
         }
     }
-    
-    .header-logo {
+    &-logo {
         margin-right: 41px;
     }
-    
-    .header .cart,
-    .header .account {
+    & .cart,
+    & .account {
         margin-left: 20px;
     }
-    
-    // ============= ! ============
-    .cart {
-        position: relative;
-    }
-    
-    .cart-circle {
+}
+
+// ============= ! ============
+.cart {
+    position: relative;
+    &-circle {
         position: absolute;
         display: flex;
         justify-content: center;
@@ -48,13 +50,15 @@
         right: -30%;
         border-radius: 50%;
         width: 60%;
-        color: #ffffff;
-        font-size: 13px;
+        color: #fff;
+        font-size: 12px;
         border: 1px solid transparent;
         background-color: $main-color;
     }
-    
-    .cart:hover .cart-circle {
+    &:hover &-circle {
         color: #222222;
         background-color: #ffffff;
+        transform: $main-transform;
+        transition: $main-transition - 0.1;
     }
+}
