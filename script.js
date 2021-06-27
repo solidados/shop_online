@@ -1,9 +1,5 @@
 // == HEADER & FOOTER SCRIPTS JQUERY =================
-$(function() {
-    $("#header").load("header.html");
-    $("#upper_footer").load("upper_footer.html")
-    $("#footer").load("footer.html");
-});
+
 
 // == MENU BURGER SCRIPT ==============================
 const menuBtn = document.querySelector('.header__item-right--menu');
