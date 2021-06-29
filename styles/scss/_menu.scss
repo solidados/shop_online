@@ -1,23 +1,26 @@
+// == MENU =============
 .menu {
-    background-color: white;
     min-width: 232px;
-    height: calc(100vh - 77px);
+    height: 764px;
+    //height: calc(100vh - 77px);
     position: absolute;
     top: 100%;
-    transition: 0.6s;
-    z-index: 1;
+    transition: 0.3s;
+    z-index: 2;
+    right: 0;
     visibility: hidden;
-    transform: translateX(250px);
+    //transform: translateX(250px);
     overflow: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background-color: rgba(245, 245, 245, 0.7);
     &-hidden {
         will-change: transform;
         visibility: visible;
         transform: translateX(0px);
     }
-    right: 0;
-    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+
     &__cover {
-        padding: 37px 34px 0px 34px;
+        padding: 37px 34px 0 34px;
         position: relative;
     }
     &__item {

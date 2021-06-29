@@ -1,8 +1,8 @@
     // == IMPORTS ========================
-    @import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';
-    @import './scss/variables';
+    //@import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';
+    @use './scss/variables';
     @import './scss/header';
-    @import '/scss/menu';
+    @import './scss/menu';
     @import './scss/footer';
     // ====================================
     * {
@@ -573,7 +573,7 @@
         .product-card {
             margin-right: 30px;
         }
-        product-card::nth-child(2) {
+        product-card:nth-child(2) {
             .product-cards {
                 justify-content: center;
             }
