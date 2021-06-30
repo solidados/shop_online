@@ -574,7 +574,7 @@ body {
   .product-card {
     margin-right: 30px;
   }
-  product-card:nth-child(2) {
+  .product-card:nth-child(2) {
     .product-cards {
       justify-content: center;
     }

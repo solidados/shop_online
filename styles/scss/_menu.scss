@@ -6,13 +6,13 @@
     position: absolute;
     top: 100%;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 0;
     right: 0;
     visibility: hidden;
     //transform: translateX(250px);
     overflow: auto;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-    background-color: rgba(245, 245, 245, 0.7);
+    background-color: rgba(245, 245, 245, 0.9);
     &-hidden {
         will-change: transform;
         visibility: visible;
