@@ -1,13 +1,15 @@
 .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: $bgrnd-dark-color;
     padding: 18px 15px;
-    position: fixed;
+    position: relative;
     top: 0;
-    //z-index: 0;
+    z-index: 0;
     width: 100%;
+    .header__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__item-left:active {
         fill: $main-color;
