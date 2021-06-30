@@ -3,16 +3,16 @@ Error: Undefined variable: "$bgrnd-dark-color".
         on line 5 of scss/_header.scss
         from line 4 of style.scss
 
-1:     // == IMPORTS ========================
-2:     //@import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';
-3:     @use './scss/variables';
-4:     @import './scss/header';
-5:     @import './scss/menu';
-6:     @import './scss/footer';
-7:     // ====================================
-8:     * {
-9:         margin: 0;
-10:         padding: 0;
+1: // == IMPORTS ========================
+2: @import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';
+3: @use './scss/variables';
+4: @import './scss/header';
+5: @import './scss/menu';
+6: @import './scss/footer';
+7: // ====================================
+8: * {
+9:   margin: 0;
+10:   padding: 0;
 
 Backtrace:
 scss/_header.scss:5
@@ -76,4 +76,4 @@ style.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$bgrnd-dark-color\".\A         on line 5 of scss/_header.scss\A         from line 4 of style.scss\A \A 1:     // == IMPORTS ========================\A 2:     //@import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';\A 3:     @use './scss/variables';\A 4:     @import './scss/header';\A 5:     @import './scss/menu';\A 6:     @import './scss/footer';\A 7:     // ====================================\A 8:     * {\A 9:         margin: 0;\A 10:         padding: 0;"; }
+  content: "Error: Undefined variable: \"$bgrnd-dark-color\".\A         on line 5 of scss/_header.scss\A         from line 4 of style.scss\A \A 1: // == IMPORTS ========================\A 2: @import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';\A 3: @use './scss/variables';\A 4: @import './scss/header';\A 5: @import './scss/menu';\A 6: @import './scss/footer';\A 7: // ====================================\A 8: * {\A 9:   margin: 0;\A 10:   padding: 0;"; }
