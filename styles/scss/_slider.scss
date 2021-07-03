@@ -1,0 +1,45 @@
+// ============================================
+// === WOMEN'S COLLECTION SLIDER ==============
+.slider {
+  background: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: $shift;
+  &-img {
+    border: none;
+    background: #F7F7F7;
+    }
+  &-btn {
+    background-color: transparent;
+    color: darkgrey;
+    padding: 10px;
+    border: none;
+    position: absolute;
+    font-size: 35px;
+    &:hover {
+      color: white;
+      background-color: rgba(206, 204, 204, 0.8);
+      }
+    &:active {
+      transform: scale(1.1);
+      transition: 0.3s;
+      background-color: rgba(112, 111, 111, 0.8);
+      }
+    &-left {
+      left: 5px;
+      }
+    &-right {
+      right: 5px;
+      }
+    }
+  }
+
+.about-wrap {
+  // background-color: whitesmoke;
+  background-color: pink;
+  margin-top: - $shift;
+  position: relative;
+  /* чтобы блок был над, а не под */
+  }

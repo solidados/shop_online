@@ -1,0 +1,39 @@
+// ============================================
+// == CATALOG - PAGINATION ====================
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 96.5px;
+  .pagination__list {
+    display: flex;
+    justify-content: center;
+    padding: 13px 15px;
+    border: 1px solid #ebebeb;
+    .pagination__page {
+      font-size: 16px;
+      line-height: 19px;
+      }
+    }
+  .pagination__page:not(:last-child) {
+    margin-right: 15px;
+    .pagination__link {
+      color: #ebebeb;
+      }
+    .pagination__link:hover {
+      color: $main-color;
+      }
+    .pagination__link:focus {
+      color: $main-color;
+      }
+    .pagination__link:active {
+      color: $main-color;
+      }
+    }
+  .pagination__link>i {
+    color: #222222;
+    font-size: 20px;
+    }
+  .pagination__link>i:hover {
+    color: $main-color;
+    }
+  }
