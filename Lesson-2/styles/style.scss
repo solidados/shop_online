@@ -1,0 +1,83 @@
+// == IMPORTS ========================
+@import 'https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap';
+@import "./scss/variables";
+@import "./scss/header";
+@import "./scss/menu";
+@import "./scss/upper-footer";
+@import "./scss/footer";
+@import "./scss/promo";
+@import "./scss/advertising";
+@import "./scss/breadcrumbs";
+@import "./scss/filter";
+@import "./scss/pagination";
+@import "./scss/products";
+// ====================================
+
+// == MAIN STYLES =====================
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  transform: $main-transform;
+  transition: $main-transition;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+button,
+input,
+textarea {
+  line-height: normal;
+  text-transform: none;
+  cursor: pointer;
+}
+
+input:focus-within {
+  outline: none;
+}
+
+details>summary {
+  list-style: none;
+}
+
+summary,
+input {
+  border: 0;
+  outline: none;
+}
+
+summary:hover {
+  transition: $main-transition;
+  cursor: pointer;
+}
+
+// ====================================
+// === MAIN ===========================
+html,
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 100%;
+  main {
+    overflow: hidden;
+    min-height: 100%;
+  }
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
