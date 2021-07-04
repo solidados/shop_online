@@ -1,0 +1,151 @@
+@import "./variables";
+
+.breadcrumb {
+  height: 148px;
+  background-color: rgba(248, 243, 244, 1);
+  &__box {
+    display: flex;
+    padding: 60px 0;
+
+    .breadcrumb__title {
+      color: $main-color;
+      }
+    }
+  }
+
+.registration {
+  padding: 64px 0 96px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    }
+
+  &__item {
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+    &--gender {
+      flex-direction: row;
+      align-items: center;
+      padding: 31px 0 33px 0;
+      }
+    }
+
+  &__heading {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    padding-bottom: 20px;
+    }
+
+  &__form {
+    width: 360px;
+    padding: 13px 17px 16px 17px;
+    border: 1px solid #A4A4A4;
+    outline: none;
+    max-height: 45px;
+    margin-bottom: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      }
+
+    &[placeholder] {
+      font-weight: 300;
+      font-size: 13px;
+      line-height: 16px;
+      }
+    }
+
+  &__radio-button {
+    min-width: 17px;
+    min-height: 17px;
+
+    &-name {
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+      color: #000000;
+      padding: 0 20px 0 10px;
+      &:hover{
+        color: $main-color;
+        }
+      }
+
+    }
+
+  &__parameters-password {
+    max-width: 360px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding-top: 15px;
+    }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: $main-color;
+    padding: 16px 29px;
+    margin-top: 39px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $main-color-hover;
+      }
+
+    &-text {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      color: #FFFFFF;
+      padding-right: 20px;
+      }
+    }
+  }
+
+.loyalty {
+  max-width: 650px;
+  margin-left: 20px;
+
+  &__heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    font-weight: 300;
+    }
+
+  &__sub-heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    font-weight: 300;
+    padding: 22px 0 21px 0;
+    }
+
+  &__list {
+    list-style-type: none;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child) {
+        padding-bottom: 17px;
+        }
+      }
+
+    &-text {
+      padding-left: 22px;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      }
+    }
+  }

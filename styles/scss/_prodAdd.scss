@@ -1,0 +1,112 @@
+// ====================================
+// === PROD ADVERTISING ===============
+
+.product__add {
+  &_wrapper {
+    text-align: center;
+    border: 1px solid #EAEAEA;
+    padding: 64px 0;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    max-width: 1140px;
+    margin: -64px auto 130px auto;
+    }
+
+  &_title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    }
+
+  &_line {
+    height: 3px;
+    width: 63px;
+    background-color: $main-color;
+    margin: 12px auto;
+    border: none;
+
+    &--greey {
+      background-color: #EAEAEA;
+      height: 1px;
+      width: 70%;
+      max-width: 642px;
+      margin: 64px auto;
+      }
+    }
+
+  &_subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+    }
+
+  &_text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    max-width: 555px;
+    margin: 0 auto;
+    padding: 48px 0 32px 0;
+    }
+
+  &_price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: $main-color;
+    }
+
+  &_sort-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 48px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-right: 22px;
+        }
+      }
+    }
+
+  &_sort-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #6F6E6E;
+    padding-right: 9px;
+    }
+
+  &_button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid $main-color;
+    margin: 0 auto;
+    padding: 10px 25px;
+    cursor: pointer;
+
+    &-text {
+      font-size: 16px;
+      line-height: 19px;
+      color: $main-color;
+      padding-left: 23px;
+      }
+    }
+  }
+
+.product-box {
+  display: flex;
+  justify-content: space-between;
+  }
+
+.product-page__card-box{ padding: 128px 0; }

@@ -1,3 +1,4 @@
+@import 'variables';
 // == FOOTER FOR ALL PAGES ============
 .footer {
     background-color: $bgrnd-dark-color;
@@ -55,10 +56,12 @@
         &__input {
             background: #e1e1e1;
             width: 100%;
-            padding: 14px 20px;
             border: 1px solid transparent;
+            padding: 14px 20px;
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
+            font-size: 14px;
+            line-height: 17px;
         }
         &__input::placeholder {
             font-family: inherit;
@@ -81,9 +84,13 @@
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
         }
+        &__button:focus-within {
+            border: 0.5px solid rgba(116, 192, 255, 0.884);
+            }
         &__button:hover {
             background: $main-color-hover;
         }
+
     }
     // == LOWER FOOTER =================
     .footer-wrap {

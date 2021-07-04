@@ -1,28 +1,19 @@
-// == MENU =============
+@import 'variables';
+// == MENU ========================
 .menu {
     min-width: 232px;
     height: 764px;
     position: absolute;
     top: 100%;
-<<<<<<< HEAD
-    transition: 0.3s;
-    z-index: 0;
-    right: 0;
-=======
     transition: 0.5s;
     z-index: 1;
->>>>>>> main
     visibility: hidden;
     transform: translateX(-250px);
     overflow: auto;
     right: 0;
     box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-<<<<<<< HEAD
-    background-color: rgba(245, 245, 245, 0.9);
-=======
     background-color: rgba(253, 247, 247, 0.95);
 
->>>>>>> main
     &-hidden {
         visibility: visible;
         will-change: transform;
